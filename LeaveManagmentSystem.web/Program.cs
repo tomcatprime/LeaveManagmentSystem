@@ -35,8 +35,8 @@ namespace LeaveManagmentSystem.web
             }
 
             app.UseHttpsRedirection();
-            app.UseRouting();
-
+            app.UseRouting(); // Enable routing for the application
+            app.UseStaticFiles(); // Enable serving static files from wwwroot
             app.UseAuthorization();
 
             app.MapStaticAssets();
